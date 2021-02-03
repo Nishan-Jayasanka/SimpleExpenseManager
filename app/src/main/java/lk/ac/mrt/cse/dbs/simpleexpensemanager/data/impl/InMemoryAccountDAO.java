@@ -33,7 +33,10 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 public class InMemoryAccountDAO implements AccountDAO {
     private final Map<String, Account> accounts;
 
-    public InMemoryAccountDAO() {
+    DatabaseHelper database;
+
+    public InMemoryAccountDAO( DatabaseHelper database) {
+        this.database=database;
         this.accounts = new HashMap<>();
     }
 

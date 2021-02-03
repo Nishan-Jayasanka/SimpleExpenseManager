@@ -62,6 +62,7 @@ public class Transaction {
 
     public Transaction(Date date, String accountNo,
                        ExpenseType expenseType, double amount) {
+
         this.date = date;
         this.accountNo = accountNo;
         this.expenseType = expenseType;
